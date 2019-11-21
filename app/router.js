@@ -9,4 +9,6 @@ module.exports = app => {
   router.get('/news', controller.news.list);
   router.get('/user', controller.user.info);
   router.get('/newUser/show', controller.newUser.show);
+  router.get('/http/get', controller.httpTest.get);
+  router.get('/http/post', controller.httpTest.post);
 };
